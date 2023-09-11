@@ -1,0 +1,40 @@
+// Function to show the login form and hide the registration form
+function showLogin() {
+    document.getElementById("loginForm").style.display = "block";
+    document.getElementById("registerForm").style.display = "none";
+}
+
+// Function to show the registration form and hide the login form
+function showRegister() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "block";
+}
+
+// Function to handle login
+function login() {
+    // Get input values
+    var email = document.getElementById("loginEmail").value;
+    var password = document.getElementById("loginPassword").value;
+    var rememberPassword = document.getElementById("rememberPassword").checked;
+
+    // Perform login logic here
+
+    // Example: Display an alert
+    alert("Logging in with email: " + email);
+}
+
+// Function to handle registration
+function register() {
+    // Get input values
+    var fullName = document.getElementById("fullName").value;
+    var email = document.getElementById("registerEmail").value;
+    var password = document.getElementById("registerPassword").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    var agreeTerms = document.getElementById("agreeTerms").checked;
+
+    // Perform registration logic here
+
+    // Example: Display an alert
+    alert("Registering user: " + fullName);
+}
+
